@@ -25,4 +25,9 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
 
 ### Configurando uma instância de Banco de Dados na Azure
 
--
+- Como criar máquinas virtuais no Portal Microsoft Azure
+- Configuração do sistema operacional da VM e seu valor de cobrança
+- Adição de discos além da VM padrão
+- Configurações de rede e gerenciamento (proteção, desligamento automático)
+- Importância do entendimento das necessidades e configurações necessárias de acordo com o contexto e a estratégia da empresa em questão
+- Introdução às configurações da criação de um banco de dados SQL
