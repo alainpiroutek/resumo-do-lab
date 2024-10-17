@@ -162,8 +162,66 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
   - Gerenciador de Armazenamento do Azure
     - Seleção de recurso e ambiente do Azure
     - Visualmente mais "fácil"
-  
+
+
+    ### Identidade, Acesso e Segurança
+
+    -  Serviços de Diretório
+      -  Microsoft Entra ID - antigo Azure Active Directory
+        - Serviço de gerenciamento de identidades e acesso em nuvem
+          - Autenticação
+          - Logon único (SSO) - evitar diversos usuários e senhas
+          - Gerenciamento de aplicativos
+          - B2B
+          - Gerenciamneto de dispositivos
+![image](https://github.com/user-attachments/assets/c967f2a6-7ff7-44ab-8a93-d1b38d5fb41d)
+        - Benefícios dos serviços de domínio baseados em nuvem, sem gerenciar os controladores de domínio
+        - Execução de aplicatvios herdados na nuvem
+        - Sincronização automática pelo Microsoft Entra ID
+
+    - Diferença entre Autenticação e Autorização
+      - Autenticação (liberação no prédio)
+        - Identificação de pessoa/serviço para acesso a um recurso
+        - Solicitação de credenciais legítimas
+        - Controle de acessos seguros, princípios de identidade
+      - Autorização (liberação à áreas específicas)
+        - Nível de acesso a uma pessoa/serviço autenticada(o)
+        - Quais dados podem ser acessados
+
+    - Métodos de Autenticação
+      - Autenticação Multifator (MFA)
+        - Fornece segurança adicional, exigindo dois ou mais elementos de autenticação
+        - Fatores
+          - Algo que você sabe (login e senha)
+          - Algo que você possui (chave, cartão)
+          - Algo que você é (validação facial)
+      - B2B do Microsoft Entra External  ID
+        - Colaboração B2B de usuários externos
+        - Parceiros, fornecedores, outros colaboradores
+      - B2C de identidades Externas do Azure AD
+        - Compartilhamento de pequenas % de meus recursos para utilização do usuário
+        - "Login" a partir do email em sites de e-commerce
+
+    - Modelos de Segurança
+      - Acesso Condicional
+        - Associação de usuário/grupo
+        - Local do IP
+        - Dispositivo
+        - Aplicativo
+        - Detecção de risco
+      - Controle de Acesso Baseado em Função (ou RBAC: Role Based Access Control)
+        - Gerenciamento dos acessos por granularidade fina
+        - Apenas acessos necessários para o desempenho das funções do colaborador
+        - ![image](https://github.com/user-attachments/assets/ba0a5e98-5373-47ab-a932-05e5dfd4d62c)
+      - Confiança Zero / Proteção Completa
+        - Proteção dos recursos através do pressuposto de que algo foi violado
+        - Proteção dos ativos em qualquer lugar com uma política central
+        - ![image](https://github.com/user-attachments/assets/416e6067-a906-4840-9f8c-56652ab32c4e)
+      - Microsoft Defender para Nuvem
+        - Serviço de monitoramento contra ameaças nos datacentes da Microsoft e outras nuvens
+        - ![image](https://github.com/user-attachments/assets/16be232d-9198-45fc-b4f7-ffaf78f833d4)
+        - Recomendações de segurança e controles de acesso just-in-time
+
+
 *Não utilizar ferramentas/recursos em versão prévia para ambientes de produção*
-  
-    
     
