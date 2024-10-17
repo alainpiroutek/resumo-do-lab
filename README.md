@@ -6,6 +6,8 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
 
 ## Resumos das lições aprendidas
 
+*Utilizo da notação em tópicos para me guiar nos estudos futuros. Essa metodologia funciona bem para mim*
+
 ### Microsoft Azure - Localizando Serviços por Categoria
 
 - Configuração do idioma no Portal Microsoft Azure
