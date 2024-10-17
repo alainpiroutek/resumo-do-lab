@@ -1,8 +1,5 @@
 # resumo-do-lab
-Este repositório contém um resumo dos conteúdos e das lições aprendidas durante os laboratórios práticos do bootcamp da DIO, sendo eles:
-- Microsoft Azure - Localizando Serviços por Categoria
-- Criando máquinas Virtuais na Azure
-- Configurando uma instância de Banco de Dados na Azure
+Este repositório contém um resumo dos conteúdos e das lições aprendidas durante os laboratórios práticos e algumas aulas teóricas do bootcamp da DIO.
 
 ## Resumos das lições aprendidas
 
