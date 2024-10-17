@@ -94,3 +94,38 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
       -  Região
       -  Opções de hospedagem
       -  Sistema operacional
+
+    ### Armazenamento
+
+    - Serviços de armazenamento
+      - Contas de armazenamento
+        - Precisa ter um nome GLOBALMENTE exclusivo
+        - Fornece acesso à internet em todo o globo
+        - Seleção de serviços de armazenamento e opções de redundância
+          - Redundância - quanto de disponibilidade vou ter da informação. Quanto maior o número de 9's na durabilidade, maior a disponibilidade do armazenamento
+            - LRS - modelo não indicado para ambientes de produção (3 cópias no mesmo datacenter)
+            - ZRS - modelo indicado para ambientes de produção (3 cópias em 3 datacenters diferentes)
+          - ![image](https://github.com/user-attachments/assets/d5f1995f-8da9-4250-9525-f88fba109ca3)
+          - Tipos de Armazenamento
+            - Blob - otimizado para armazenamento massivo de **dados não estruturados** ( [...] <storage-account-name>.blob [...] )
+              - Pode receber diversos tipos e categorias de dados, funciona como uma caixa
+            - Disco - fornecimento de discos para VM's, apps e outros serviços ( [...] <storage-account-name>.dfs [...] )
+            - Fila - armazenamento de mensagens ( [...] <storage-account-name>.queue [...] )
+            - Arquivos - compartilhamento de arquivos de rede altamente disponível, "pasta na nuvem" ( [...] <storage-account-name>.file [...] )
+            - Tabelas - opção de chave para dados estruturados não relacionais em designs sem esquema ( [...] <storage-account-name>.table [...] )
+        - Camadas de acesso
+          - Frequente - otimizada para dados acessados com frequência
+          - Esporádico - otimizada para dados acessados com pouca frequência e armazenado por pelo menos 30 dias
+          - Frio - otimizada para dados acessados com pouca frequência e armazenado por pelo menos 90 dias
+          - Arquivo morto - otimizada para dados acessados raramente e armazenado por pelo menos 180 dias
+      - Migrações para o Azure
+        - Plataforma unificada para migração
+        - Intervalo de ferramentas integradas e autônomas
+        - Avaliação e migração
+        - **Azure Data Box** - serviço de migração física (até 80 TB), como se fosse um HD externo
+          - ![image](https://github.com/user-attachments/assets/8ca69b98-85e5-44ba-9db3-ca950ef0094f)
+        - **AzCopy** -  Utilitário para copiar Blobs/arquivos para conta de armazenamento, com sincronização unidirecional
+      - Opções de Gerenciamento de Arquivos
+        - Gerenciador de Armazenamento Azure - interface gráfica do usuário, como um navegador. Compatível com todos os sistemas operacionais. "AzCopy com uma tela bonitinha"
+        - Sincronização de Arquivos do Azure - sincroniza arquivos do Azure e on-premises de forma bidirecional
+        - 
