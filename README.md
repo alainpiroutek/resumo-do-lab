@@ -8,6 +8,8 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
 
 *Utilizo da notação em tópicos para me guiar nos estudos futuros. Essa metodologia funciona bem para mim*
 
+## Módulo 2 | Conceitos Iniciais de Cloud com Azure
+
 ### Microsoft Azure - Localizando Serviços por Categoria
 
 - Configuração do idioma no Portal Microsoft Azure
@@ -34,7 +36,9 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
 - Importância do entendimento das necessidades e configurações necessárias de acordo com o contexto e a estratégia da empresa em questão
 - Introdução às configurações da criação de um banco de dados SQL
 
-### Desafio de Projeto - Construindo Arquiteturas no Azure
+## Módulo 3 | Arquitetura e Serviços Azure
+
+### Construindo Arquiteturas no Azure
 
 - Não consegui realizar na prática, pois minha conta gratuita na azure já expirou. Estou acompanhando com bastante atenção e visualizando as etapas com calma.
 - Criação de grupos de recursos para exemplificar seu uso e configuração do mesmo
