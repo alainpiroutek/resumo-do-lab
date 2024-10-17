@@ -71,3 +71,29 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
   - Gateaway de VPN - envio de tráfego criptografado entre rede virtual e local
     - ExpressRoute - "Gateway" físico feito por cabos de fibra ótica
   - DNS (Domain Name Service) do Azure - gerenciamento de recursos externos e do azure com um único serviço de DNS (possibilidade de apontar conjuntos de registros para um único DNS)
+ 
+  ### Configurando Recursos e Dimensionamentos em Máquinas Virtuais na Azure
+
+  - Criação de VM's
+    -  Possibildiade: Seleção do ambiente de trabalho e da carga de trabalho, configurações e recursos já pré-definidos de acordo com as seleções
+      -  Básico: seleção da assinatura, grupo de recursos, nome da VM, região, opção de disponibilidade (conjunto de dimensionamento de máquinas virtuais, optando por sua escalabilidade manual ou automática, entre outras configurações), imagem, tamanhos da VM (consultar tabela de tamanhos), nome e senha do usuário, 
+      -  Discos: portas de entrada, tamanho de disco, checkar "excluir com VM" (apagar o disco junto com a exclusão da VM, evitar discos órfãos).
+      -  Rede: Seleção da rede virtual, "Excluir o IP público e a NIC quando a VM for excluída"
+      -  Gerenciamento: Identidade, Azure AD, desligamento automático (mas não tem ligamento automático), email de notificação para usuário definido, habilitar backup.
+      -  Monitoramento: definir alertas para receber notificações, diagnóstico
+      -  Avançado: seleção de extensões para ser instalada na VM, apliativos da VM
+      -  Marcas: importante para governança
+      -  Revisar + criar: finalização do processo, apresentação do preço e termo de autorização
+
+    - Área de Trabalho Virtual
+      - Modelos de host: Pessoal (casos específicos com softwares específicos) ou Em pool (para várias instâncias com balanceamento de carga)
+      - Adição de VM's
+
+    - Aplicativos de Funções - necessário ter uma conta de armazenamento
+      -  Nomear
+      -  Código ou imagem de contêiner
+      -  Pilha de runtime (linguagem)
+      -  Versão da linguagem
+      -  Região
+      -  Opções de hospedagem
+      -  Sistema operacional
