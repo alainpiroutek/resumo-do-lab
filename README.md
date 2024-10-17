@@ -122,9 +122,48 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
         - Plataforma unificada para migração
         - Intervalo de ferramentas integradas e autônomas
         - Avaliação e migração
-        - **Azure Data Box** - serviço de migração física (até 80 TB), como se fosse um HD externo
+        - **Azure Data Box** - serviço de migração física (**até 80 TB**), como se fosse um HD externo
           - ![image](https://github.com/user-attachments/assets/8ca69b98-85e5-44ba-9db3-ca950ef0094f)
         - **AzCopy** -  Utilitário para copiar Blobs/arquivos para conta de armazenamento, com sincronização unidirecional
       - Opções de Gerenciamento de Arquivos
         - Gerenciador de Armazenamento Azure - interface gráfica do usuário, como um navegador. Compatível com todos os sistemas operacionais. "AzCopy com uma tela bonitinha"
         - Sincronização de Arquivos do Azure - sincroniza arquivos do Azure e on-premises de forma bidirecional
+
+    #### Laboratório - Armazenamento
+
+    - Contas de armazenamento
+      - Assinatura, grupo de recursos, nome da conta (GLOBALMENTE exclusivo, 3 a 24 caracteres, sem caracteres especiais e com letas minúsculas apenas), região, desempenho (standard - maioria dos cenários; premium - cenários com baixa latência) e redundância (LRS, ZRS, GRS ou GZRS)
+      - Armazenamento de blobs (quente ou frio), acesso a rede (privado ou público)
+      - Habilitar ou não a exclusão automática de blobs
+    - Contêiners (mais usados) - Blobs
+    - Compartilhamento de Arquivos (mais usados)
+      - Gera o script completo para configurar uma máquina e utilizar dos arquivos dentros do compartilhamente de arquivos criado
+      - Modelo de replicação
+      - Modelo de camada (quente ou frio)
+    - Fila
+      - Utilizada para aplicações
+    - Tabela
+
+  - Migrações para Azure
+    - Criação de um projeto e seleção de sua geografia
+    - Dentro do Portal, existem ferramentas de avaliação para entendimento da estratégia de migração mais recomendada
+    - DataBox - selecionar tipo de transferência (importação ou exportação do azure), assinatura, grupo de recursos, região de origem e de destino
+      - Comparação dos preços de acordo com o tamanho (DataBox disk, DataBox, DataBox Heavy)
+      - Volumes muito grandes de informações
+
+  - AzCopy
+    - Funciona para todos os sistemas operacionais
+    - Download do AzCopy
+    - Criação de um novo contêinere - alterar as permissões e checkar todas elas e copiar o token SaaS gerado
+    - Copiar um código presente na documentação de criação do AzCopy
+    - Utilizar o prompt de comando para realizar a cópia, indicando a pasta correta e colando o token com as alterações necessárias
+    - Os dados são copiados a partir do AzCoy e salvos na nuvem Azure
+
+  - Gerenciador de Armazenamento do Azure
+    - Seleção de recurso e ambiente do Azure
+    - Visualmente mais "fácil"
+  
+*Não utilizar ferramentas/recursos em versão prévia para ambientes de produção*
+  
+    
+    
