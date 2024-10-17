@@ -128,4 +128,3 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
       - Opções de Gerenciamento de Arquivos
         - Gerenciador de Armazenamento Azure - interface gráfica do usuário, como um navegador. Compatível com todos os sistemas operacionais. "AzCopy com uma tela bonitinha"
         - Sincronização de Arquivos do Azure - sincroniza arquivos do Azure e on-premises de forma bidirecional
-        - 
