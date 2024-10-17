@@ -31,3 +31,9 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
 - Configurações de rede e gerenciamento (proteção, desligamento automático)
 - Importância do entendimento das necessidades e configurações necessárias de acordo com o contexto e a estratégia da empresa em questão
 - Introdução às configurações da criação de um banco de dados SQL
+
+### Desafio de Projeto - Construindo Arquiteturas no Azure
+
+- Não consegui realizar na prática, pois minha conta gratuita na azure já expirou. Estou acompanhando com bastante atenção e visualizando as etapas com calma.
+- Criação de grupos de recursos para exemplificar seu uso e configuração do mesmo
+- Inclusão de uma rede virtual de uma outra região no grupo de recursos, para comprovar que é possível ter recursos de diferentes regiões no mesmo grupo
