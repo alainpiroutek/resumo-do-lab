@@ -245,9 +245,30 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
     - Traz recomendações de outros cloud providers também (GCP, AWS,..)
     - Central de alertas - possibilidade de configuração de alertas a serem recebidos por email ou outras ferramentas
     - Attack path analysis - possíveis "portas abertas" para a internet
-    - 
-  - 
- 
+   
+### Desafios de Código - Aperfeiçoe Sua Lógica e Pensamento Computacional
 
+#### PBL, Lógica e Pensamento Computacional
+
+  - PBL ou Problem Based Learning - Aprendizagem Baseado em Problemas
+    - Resolução de problemas reais para aprendizado
+  - Lógica de Programação e Pensamento Computacional
+    - Lógica de Programação
+      - "Novo idioma"
+      - Transformar problemas em soluções claras e ordenadas através de passos lógicos e algoritmos
+    - Pensamento Computacional
+      - Encontrar caminhos para resolver desafios, projetar sistemas e comopreender comportamentos
+  - Porquê utilizar esse método de aprendizado?
+    - Aprendizagem Ativa
+    - Transformação Digital
+    - Comunidade Protagonista
+
+  - Desafios de Código
+    - Introdução à lógica da programação em algumas linguagens através da resolução de um mesmo desafio. Entre as linguagens abordadas estão:
+      - Java
+      - C#
+      - JavaScript
+      - Python
+      - Kotlin
 
     
