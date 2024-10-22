@@ -271,4 +271,70 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
       - Python
       - Kotlin
 
-    
+  - Desafio 1 / 3 - Identificando os Componentes de Arquitetura do Azure
+
+          # Recebe a Entrada do usuário e armazena na variável "entrada"
+          entrada = input()
+          
+          # Função responsável por receber um componente e retornar sua respectiva descrição.
+          def identificar_componente(componente):
+          	if componente == "Datacenters":
+          			return "Instalações físicas que abrigam servidores e outros recursos"
+          	elif componente == "Regiões do Azure":
+          	    return "Localizações geográficas onde os serviços são disponibilizados"
+          	elif componente == "Assinaturas":
+          	    return "Unidades de faturamento que agrupam recursos e serviços do Azure"    	
+          	elif componente == "Zonas de Disponibilidade":
+          	    return "Garante alta disponibilidade ao isolar falhas"    
+          	elif componente == "Grupos de Gerenciamento":
+          	    return "Estruturas hierárquicas que gerenciam múltiplas assinaturas"	    
+          print(identificar_componente(entrada))
+      
+      - Desafio 2 / 3 - Explorando os Serviços de Armazenamento do Azure
+
+            # Recebe a Entrada do usuário e armazena na variável "entrada"
+            entrada = input()
+            
+            # Função responsável por receber um serviço de armazenamento e retornar sua respectiva descrição.
+            def identificar_servico_armazenamento(servico):
+            	if servico == "Arquivos do Azure":
+            			return "Armazenamento de arquivos compartilhados acessíveis por meio de SMB"
+            			
+            	elif servico == "Blob do Azure":
+            	    return "Armazenamento de arquivos grandes e não estruturados"
+            	    
+            	elif servico == "Fila do Azure":
+            	    return "Armazenamento de mensagens para comunicação entre aplicações"
+            	    	    	
+            	elif servico == "Tabelas do Azure":
+            	    return "Armazenamento de dados estruturados não relacionais em tabelas"
+            	    
+            	elif servico == "Disco do Azure":
+            	    return "Armazenamento de alto desempenho para máquinas virtuais"
+	    
+            print(identificar_servico_armazenamento(entrada))
+
+    - Desafio 3 / 3 - Associando Recursos de Identidade, Acesso e Segurança
+
+          # Recebe a Entrada do usuário e armazena na variável "entrada"
+          entrada = input()
+          
+          # Função responsável por receber um serviço ou ferramenta e retornar sua respectiva descrição.
+          def associar_recurso(recurso):
+          	if recurso == "Azure Role-Based Access Control":
+          			return "Possibilita um gerenciamento de acesso refinado dos recursos"
+          			
+          	elif recurso == "Microsoft Entra ID":
+          	    return "Serviço de gerenciamento de identidades e acessos"
+          	    
+          	elif recurso == "Multi-Factor Authentication":
+          	    return "Proporciona uma camada adicional de segurança"
+          	    	    	
+          	elif recurso == "Azure Key Vault":
+          	    return "Permite armazenar e acessar segredos de maneira segura"
+            
+          	elif recurso == "Azure Security Center":
+          			return "Oferece visibilidade e controle sobre a segurança dos recursos"
+          
+          print(associar_recurso(entrada))
+
