@@ -420,3 +420,44 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
     - Definição do Nome e do Valore (Par Nome-Valor)
     - Não é herdável
     - Recursos no mesmo grupo de recursos não carregam a mesma Tag automaticamente
+
+### Governança e Conformidade 
+
+#### Blueprints, Políticas e Bloqueios de Recurso 
+
+- Azure Policy
+    - **Auxílio** na imposição de padrões organizacionais e avaliações de conformidade em escala
+    - Fornecimento de **governança e consistência de recursos** com conformidade regulatório, segurança, custo e gerenciamento 
+    - Manutenção da hirarquia de informações
+    - Exemplo: Bloqueio de regiões por administradores para todos os colaboradores
+    - Avaliação e identificação de recursos fora da política 
+    - Policy pode ser criada e ficar inativa 
+    - Modify Effect - Azure Policy:
+        - Non-compliant - bloqueio de opções fora da política 
+        - Remediation - Alteração de status do que já existe a partir de uma nova regra criada. Importante avaliar se realmente é necessário, pois pode corromper algo que já está ativo 
+        - Compliant - Recursos dentro das políticas definidas
+
+- Bloqueios de Recursos 
+    - Proteção dos recursos de uma exclusão ou alteração acidental
+    - Gerenciar bloqueios nas assinaturas, grupo de recursos ou níveis de recursos individuais
+    - Bloqueios são herdáveis, diferentemente das marcas/tags 
+    - Tipos de bloqueios 
+
+        | Tipos de Bloqueio | Ler | Atualizar | Excluir |
+        |:-----------------:|:---:|:---------:|:-------:|
+        |Excluir            | Sim | Sim       | Não     |
+        |ReadOnly           | Sim | Não       | Não     | 
+        
+        - Excluir infere menor ação, pois é possível ler, atualizar. Não leva a regra junto para outro grupo de recursos
+        - ReadOnly não pode ser mexido caso a máquina esteja desligada. Nenhuma alteração pode ser reailzada
+        - Importante entender qual dos cenários melhor atende o contexto em questão
+- Portal de Confiança do Serviço 
+    - Central de publicação para consulta de protocolos, leis e outras informações legais 
+- Microsoft Purview
+    - Família de soluções para **Gerenciamento de gorvenança, risco e conformidade de dados**
+    - Compliance
+    - Auditoria dos dados e dos acessos 
+    - Insights de dados locais, multinuvem e de SaaS 
+    - Descoberta de dados automatizada
+    - Classificação dos dados (confidenciais ou não)
+    - Linhagem de dados de de ponta a ponta 
