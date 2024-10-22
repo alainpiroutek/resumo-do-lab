@@ -3,8 +3,9 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
 
 ## Resumos das lições aprendidas
 
-*Utilizo da notação em tópicos para me guiar nos estudos futuros. Essa metodologia funciona bem para mim*
-*Não utilizar ferramentas/recursos em versão prévia para ambientes de produção*
+    Utilizo da notação em tópicos para me guiar nos estudos futuros. Essa metodologia funciona bem para mim
+
+    Não utilizar ferramentas/recursos em versão prévia para ambientes de produção*
 
 ## Módulo 1 | Conceitos Iniciais de Cloud com Azure
 
@@ -53,17 +54,15 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
     - Área de trabalho virtual do Azure - execução completa de aplicativo pela nuvem, como um desktop personalizado
       - Redução de perda de recursos físicos
       - Gerenciamento de acessos e licenças
-    - Serviçoes de Contêineres do Azure (PaaS) - ambiente leve e virtualizado **sem necessidade de gerenciamento do sistema operacional** e responde sob demanda a atualizações/alterações
+    - Serviços de Contêineres do Azure (PaaS) - ambiente leve e virtualizado **sem necessidade de gerenciamento do sistema operacional** e responde sob demanda a atualizações/alterações
         - Instâncias de um contêiner: Oferta de PaaS executa um contêiner no Azure
         - Aplicativos de contêiner: balanceamento de carga e escalabilidade
         - Kubernetes do Azure: orquestração para contêineres - arquiteturas distribuídas com grandes números de contêineres (gerenciamento do ciclo de vida)
-    - Azure Functions - oferta PaaS que suporta operações de computação sem servidor, baseado em eventos/ocorrências
-  
-    - **Comparação das opções de computação do Azure**
-      - VM's - útil para migrações lift-and-shift com pacote de sistema operacional completo
-      - Área de trabalho cirtual - experiência de desktop com aplicativos definidos e selecionados. Recursos limitados de acordo com o acesos
-      - Contêineres - ambiente leve e em miniatura para microsserviçoes. Garante escalabilidade e resiliência pela orquestração (AKS)
-  
+        - Azure Functions - oferta PaaS que suporta operações de computação sem servidor, baseado em eventos/ocorrências
+- **Comparação das opções de computação do Azure**
+    - VM's - útil para migrações lift-and-shift com pacote de sistema operacional completo
+    - Área de trabalho virtual - experiência de desktop com aplicativos definidos e selecionados. Recursos limitados de acordo com o acesos
+    - Contêineres - ambiente leve e em miniatura para microsserviçoes. Garante escalabilidade e resiliência pela orquestração (AKS)  
     - Serviços de Aplicativo da Azure - plataforma para criação, implementação e dimensionamento de aplicativos Web e API. Oferta PaaS.
     - Serviços de Rede do Azure - VNET permite comunicações entre os recursos do Azure, extremidades públicas e privadas. Permite criação de sub-redes virtuais. Atenção para não criar na mesma faixa de IP das redes on-premises (OVERLAP)
     - Gateaway de VPN - envio de tráfego criptografado entre rede virtual e local
@@ -189,17 +188,17 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
         - Nível de acesso a uma pessoa/serviço autenticada(o)
         - Quais dados podem ser acessados
 
-    - Métodos de Autenticação
-      - Autenticação Multifator (MFA)
-        - Fornece segurança adicional, exigindo dois ou mais elementos de autenticação
-        - Fatores
-          - Algo que você sabe (login e senha)
-          - Algo que você possui (chave, cartão)
-          - Algo que você é (validação facial)
-      - B2B do Microsoft Entra External  ID
+- Métodos de Autenticação
+    - Autenticação Multifator (MFA)
+     - Fornece segurança adicional, exigindo dois ou mais elementos de autenticação
+     - Fatores
+        - Algo que você sabe (login e senha)
+        - Algo que você possui (chave, cartão)
+        - Algo que você é (validação facial)
+    - B2B do Microsoft Entra External  ID
         - Colaboração B2B de usuários externos
         - Parceiros, fornecedores, outros colaboradores
-      - B2C de identidades Externas do Azure AD
+    - B2C de identidades Externas do Azure AD
         - Compartilhamento de pequenas % de meus recursos para utilização do usuário
         - "Login" a partir do email em sites de e-commerce
 
@@ -271,7 +270,7 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
       - Python
       - Kotlin
 
-  - Desafio 1 / 3 - Identificando os Componentes de Arquitetura do Azure
+- Desafio 1 / 3 - Identificando os Componentes de Arquitetura do Azure
 
           # Recebe a Entrada do usuário e armazena na variável "entrada"
           entrada = input()
@@ -290,7 +289,7 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
           	    return "Estruturas hierárquicas que gerenciam múltiplas assinaturas"	    
           print(identificar_componente(entrada))
       
-      - Desafio 2 / 3 - Explorando os Serviços de Armazenamento do Azure
+- Desafio 2 / 3 - Explorando os Serviços de Armazenamento do Azure
 
             # Recebe a Entrada do usuário e armazena na variável "entrada"
             entrada = input()
@@ -314,7 +313,7 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
 	    
             print(identificar_servico_armazenamento(entrada))
 
-    - Desafio 3 / 3 - Associando Recursos de Identidade, Acesso e Segurança
+- Desafio 3 / 3 - Associando Recursos de Identidade, Acesso e Segurança
 
           # Recebe a Entrada do usuário e armazena na variável "entrada"
           entrada = input()
@@ -338,3 +337,86 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
           
           print(associar_recurso(entrada))
 
+
+## Módulo 3 | Gerenciamento e Governança na Azure
+
+### Gerenciamento de Custos na Azure 
+
+#### Fatores que afetam os custos 
+1. Tipo de recurso: existem recursos mais caros e outros mais baratos, além de poderem se enquadrar em categorias diferentes
+2. Consumo: pagamento conforme a utilização 
+3. Manutenção: monitoramento do volume do Azure e manter ambiente idenficando e reduzindo custos 
+4. Área geográfica: o mesmo recurso pode ter valores diferentes em diferentes regiões, devido, principalmente, à tributação do local 
+5. Tráfego de rede: comunicação, principalmente, entre regiões, devido às zonas de cobrança
+6. Assinatura: tipo e configuração da assinatura
+
+#### Azure Marketplace
+
+- "Loja" da Azure 
+- Oferece aplicativos e serviços certificados pela Azure 
+- Software de compilação e implantação de aplicativos
+- Utilização de serviços não nativos da Azure 
+    - Indisponibilidade deve ser tratada com o suporte do fabricante 
+
+#### Calculadora de Preços
+
+- Estimativa do custo que será cobrado 
+- Opções básicas de configuração:
+    - Região 
+    - Camada 
+    - Opções de Cobrança 
+    - Opções de Suporte 
+    - Programas e Ofertas 
+    - Preço de Desenvolvimento (Assinatura)
+
+- Calculadora de Custo Total de Propriedade (TCO)
+    - Ferramenta para estimar a economia de custos numa eventual migração para o Azure 
+    - Comparação entre On-Premises x Nuvem Azure 
+
+- Relatório de Cobrança:
+    - Enriquecimento dos dados 
+    - Inclusão de alertas de anormalidade
+        - Definição de orçamento de gastos
+        - Custos excedento o limite 
+        - Recomendações de custos 
+
+#### Marcas ou Tags 
+
+- **NÃO** são obrigatórias
+- Fornecimento de metadados aos recursos da Azure 
+- Organização dos recursos por meio de taxonomia lógica 
+- Par nome-valor 
+- Facilitam compilar as informações de cobrança
+
+#### Laboratório - Otimizando Custos no Azure 
+
+- Custo Total de Prodiedade (TCO) - Simulação 
+    - Definição da Carga de Trabalho
+        - Servidores (ambiente, processador, Memória/GPU)
+        - Banco de Dados
+        - Armazenamento 
+        - Rede 
+    - Ajuste de Suposições
+        - Cobertura do Software Assurance - desconto de até 40%
+        - GRS 
+        - Custos de Máquinas Virtuais (VM's)
+    - Exibição de Relatório 
+        - Resultado da economia de até X dólares num período Y
+        - Gráfico de como seria no período
+        - Distribuição dos gastos em gráfico de pizza 
+
+- Calculadora de Preços Azure
+    - Cálculo dos custos **estimados** por hora ou mensais do Azure
+    - Menu lateral com todos os Recursos, Aplicativos e Serviços
+    - Possibilidade de configurar os recursos/aplicativos/serviçoes de inúmeras formas para avaliar o preço e a diferença entre eles
+
+- Gerenciamento de Custos e Cobranças
+    - Overview do ambiente 
+    - Definição de orçamentos
+    - Recomendações - melhorias que ppodem trazer redução do custo 
+    - Definição de alertas de custos - personalizáveis
+
+- Marcas / Tags 
+    - Definição do Nome e do Valore (Par Nome-Valor)
+    - Não é herdável
+    - Recursos no mesmo grupo de recursos não carregam a mesma Tag automaticamente
