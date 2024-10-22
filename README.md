@@ -461,3 +461,19 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
     - Descoberta de dados automatizada
     - Classificação dos dados (confidenciais ou não)
     - Linhagem de dados de de ponta a ponta 
+
+#### Laboratório - Governança e Conformidade 
+
+- Portal de Serviços
+    - Link: servicetrust.microsoft.com 
+    - Regulamentos de diferentes países
+    - Relatórios, serviços financeiros 
+- Portal do Azure 
+    -  Caso tente excluir um recurso com bloqueio, aparecerá uma mensagem informando que não é possível e que é necessário realizar a retirada do bloqueio antes de continuar
+- Microsoft Purview 
+    - Switch de aplicações com diversas funcionalidades e recursos 
+    - Governança dentro e fora do Azure
+- Azure Policy
+    - Aplicadas a nível de grupo de gerenciamento, grupo de recursos, independente do usuário 
+    - Automaticamente ao criar uma Policy ela é ativada, caso seja um teste, deve ser alterado manualmente para "desativada"
+    
