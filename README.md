@@ -531,3 +531,34 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
 - Arc 
     - Necessário configurar para utilizar 
     - Não existe concorrência para este recurso
+
+#### Ferramentas de Monitoramento do Azure 
+
+- Assistente do Azure 
+    - Analisa recursos impantados do Azure 
+    - Faz recomendação com base na práticas recomendadas 
+    - Otimização das implantações  
+    - Confiabilidade, Segurança, Desempenho, Custo e Excelência Operacional  
+    - Validação de incoerências
+
+- Integridade do Serviço do Azure 
+    - Coleção de serviços que mantém informações sobre o status geral do Azure 
+    - Status de serviços com potencial de afetar o ambiente 
+    - Status de recursos específicos afetando o ambiente
+    - Status do Azure: Visão global da integridade de todos os serviços da Azure em todas as regiões 
+    - Exibição focada nos serviços e regiões em uso 
+    - Resource Health: exibição personalizada dos recursos reais do Azure. informações de integridade de rescursos de nuvens individuais 
+
+- Azure Monitor 
+    - Maximiza a disponibilidade e desempenho de aplicativos e serviços
+    - Coleta, analisa e toma decisões de acordo com a telemetria da nuvem e ambientes locais
+
+#### Laboratório - Ferramentas de Monitoramento do Azure 
+
+- Monitor 
+    - Diversas configurações e recursos 
+    - Análise de dados 
+- Service Healt 
+    - Visualização do mapa global com a saúde da Azure 
+- Advisor 
+    - Centro de recomendações 
