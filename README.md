@@ -476,4 +476,58 @@ Este repositório contém um resumo dos conteúdos e das lições aprendidas dur
 - Azure Policy
     - Aplicadas a nível de grupo de gerenciamento, grupo de recursos, independente do usuário 
     - Automaticamente ao criar uma Policy ela é ativada, caso seja um teste, deve ser alterado manualmente para "desativada"
-    
+
+
+#### Ferramentas de Gerenciamento e Implantação 
+
+- Ferramentas para Interagir com o Azure 
+    - Portal do Azure 
+    - Azure Cloud Shell 
+    - Azure PowerShell
+    - Interface de Linha de Comando (CLI)
+
+- Azure Arc 
+    - Ferramenta disponível no Portal
+    - Moldes multicloud (AWS, GCP, ...)
+    - Extensão de Gerenciamento de Recursos do Azure para Local, Várias Nuvens e Borda
+
+- Azure Resource Manager (ARM)
+    - Camada de gerenciamneto que permite criar/atualizar/excluir recursos na assinatura do Azure 
+    - "Grande Funil"
+    - Centraliza requisições
+
+- Infraestrutura como Código 
+    - Garantia de consistência na implantação em todo o ecossistema de nuvem 
+    - Gerenciamento da configuração em escala 
+    - Provisionamento rápido de ambientes adicionais com base em uma configuração e um build padrão 
+
+- Modelos do ARM 
+    - Arquivos em JSON (JavaScript Object Notation)
+    - Podem ser usados para criar e implantar a infraestruturada do Azure 
+    - Requisitos dos modelos 
+        - Sintaxe declarativa
+        - Resultados repetíveis 
+        - Orquestração
+        - Arquivos modulares 
+        - Validação integrada 
+        - Código exportável 
+
+- Azure Bicep 
+    - Modelo de linguagem nativa da Microsoft 
+    - Comandos não aceitos em outras nuvens, apenas na Azure 
+
+
+#### Laboratório - Ferramentas de Gerenciamento e Implantação
+
+- Portal Azure 
+    - Utilização dos botões do Portal
+- CloudShell
+    - Botão no portal no canto superior direito 
+    - Barra na parte de baixo do navegador para realizar edições por meio de codagem 
+    - Possibilidade de importar/exportar arquivos e abrir em outra janela 
+- PowerShell (PS) ou CLI - codagem mas fora do Azure ideal para automações grandes para criação de modelos de código 
+- Azure Bicep: azure.github.io/bicep 
+    - Não alimentado pela MS, mas sim pela comunidade 
+- Arc 
+    - Necessário configurar para utilizar 
+    - Não existe concorrência para este recurso
